@@ -1,0 +1,14 @@
+.topbar {
+  background: var(--off-black);
+  color: var(--mid-gray);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  padding: 0.5rem 0;
+}
+
+.topbar_inner {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}

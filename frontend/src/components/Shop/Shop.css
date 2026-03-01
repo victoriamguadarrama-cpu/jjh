@@ -1,0 +1,65 @@
+.shop-loading, .shop-error {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: var(--mid-gray);
+  font-size: 0.9rem;
+}
+
+.shop-error code {
+  background: var(--light-gray);
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.85rem;
+}
+
+.shop_header {
+  background: var(--off-black);
+  color: var(--cream);
+  padding: 4rem 0;
+}
+
+.shop_eyebrow {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--light-gray);
+  margin-bottom: 0.75rem;
+}
+
+.shop_title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 0.75rem;
+}
+
+.shop_sub {
+  font-size: 0.82rem;
+  color: var(--mid-gray);
+  letter-spacing: 0.06em;
+}
+
+.shop_body {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.shop_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .shop_grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .shop_grid {
+    grid-template-columns: 1fr;
+  }
+}

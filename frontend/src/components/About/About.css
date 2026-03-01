@@ -1,0 +1,95 @@
+/* ── Hero ───────────────────────────────────────────────── */
+.about-hero {
+  background: var(--black);
+  color: var(--cream);
+  padding: 4rem 0;
+}
+
+.about-hero_title {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  margin-bottom: 1rem;
+}
+
+.about-hero_sub {
+  font-size: 0.9rem;
+  color: var(--mid-gray);
+  max-width: 580px;
+  line-height: 1.8;
+}
+
+/* ── Sections ───────────────────────────────────────────── */
+.about-section {
+  background: var(--off-black);
+  padding: 6rem 0;
+}
+
+.about-section_inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.about-section_image {
+  overflow: hidden;
+}
+
+.about-section_image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+.about-section_image:hover img {
+  transform: scale(1.03);
+}
+
+.about-section_text h2 {
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  color: var(--cream);
+  margin-bottom: 1.5rem;
+  font-weight: 300;
+}
+
+.about-section_text p {
+  font-size: 1rem;
+  color: var(--light-gray);
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+}
+
+/* ── Dark variant ───────────────────────────────────────── */
+.about-section--dark {
+  background: var(--black);
+}
+
+/* ── Location pills ─────────────────────────────────────── */
+.about-section_locations {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.location-pill {
+  padding: 0.4rem 1rem;
+  border: 1px solid var(--dark-red);
+  color: var(--dark-red);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* ── Responsive ─────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .about-section_inner {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .about-section_image img {
+    height: 300px;
+  }
+}
