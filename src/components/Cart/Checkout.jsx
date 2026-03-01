@@ -38,41 +38,15 @@ export default function Checkout() {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   }
 
-  async function handleSubmit(e) {
+  function handleSubmit(e) {
     e.preventDefault();
     setSubmitting(true);
-
-    const order = {
-      date: new Date().toISOString(),
-      customer: {
-        name: form.name,
-        email: form.email,
-        phone: form.phone,
-        notes: form.notes,
-      },
-      items: items.map(([, item]) => ({
-        title: item.product.title,
-        size: item.size,
-        color: item.color,
-        quantity: item.quantity,
-        price: item.product.price * item.quantity,
-      })),
-      total: getCartTotal(),
-    };
-
-    try {
-      await fetch("http://localhost:3001/orders", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(order),
-      });
+    // Simulate a brief processing delay for UX
+    setTimeout(() => {
       clearCart();
       setOrderPlaced(true);
-    } catch (err) {
-      alert("Something went wrong. Please try again.");
-    } finally {
       setSubmitting(false);
-    }
+    }, 800);
   }
 
   if (orderPlaced) {

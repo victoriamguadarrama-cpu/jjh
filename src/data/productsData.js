@@ -1,0 +1,92 @@
+export const productsData = [
+  {
+    id: 1,
+    title: "Chips, Salsa & Repeat",
+    price: 20,
+    color: "Red",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "salsa_repeat.png",
+    description: "Say it louder for the people in the back. This heathered red tee features a bold circular graphic of a chip mid-dip — because some rituals are sacred. A must-have for anyone who considers salsa a food group."
+  },
+  {
+    id: 2,
+    title: "Killer Burritos Tan",
+    price: 20,
+    color: "Tan",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "kb_tan.png",
+    description: "Rock-and-roll meets Mexican food in the best way possible. This warm tan tee features the Killer Burritos logo in a bold metal-band style — because our burritos deserve that kind of reverence. Soft, relaxed fit for everyday wear."
+  },
+  {
+    id: 3,
+    title: "Killer Burritos Black",
+    price: 20,
+    color: "Black",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "kb_black.png",
+    description: "The Killer Burritos logo in its most powerful form — white on black. Clean, bold, and just a little menacing. Perfect for those who take their burritos as seriously as their wardrobe."
+  },
+  {
+    id: 4,
+    title: "Órale! Savor the Flavor",
+    price: 20,
+    color: "Black",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "orale.png",
+    description: "¡Órale! This expressive black tee pairs the Café Sabor signature script with bold oversized lettering and the timeless reminder to savor the flavor. A statement shirt with serious soul."
+  },
+  {
+    id: 5,
+    title: "Tacos and Tequila",
+    price: 20,
+    color: "Turquoise",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "tandt.png",
+    description: "Two of life's great pleasures, together at last. This vibrant turquoise tee features a bold brushstroke design that looks great whether you're at the restaurant or living your best life on a Friday night."
+  },
+  {
+    id: 6,
+    title: "Tacos Are Life Est. 2002",
+    price: 20,
+    color: "Charcoal",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "tacosRlife.png",
+    description: "Since 2002, Café Sabor has known what's up. This vintage-style charcoal tee features a distressed graphic that celebrates two decades of taco excellence. Worn-in feel, timeless statement."
+  },
+  {
+    id: 7,
+    title: "Henry's Lake",
+    price: 20,
+    color: "Green",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "henrys_lake.png",
+    description: "A love letter to one of Idaho's finest spots. This heathered green tee features a colorful jumping trout graphic with Henry's Lake and Island Park, ID front and center. Perfect for the angler, the adventurer, or anyone who just loves the outdoors."
+  },
+  {
+    id: 8,
+    title: "Island Park, ID",
+    price: 20,
+    color: "Dark Red",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "ip_id_sweatshirt.png",
+    description: "Campfire sunsets and tall pines — this cozy dark red crewneck sweatshirt captures the spirit of Island Park, Idaho in a circular badge graphic. Warm, comfortable, and perfect for cool mountain evenings."
+  },
+  {
+    id: 9,
+    title: "Long Sleeved Café Sabor",
+    price: 20,
+    color: "Black",
+    sizes: ["XS", "S", "M", "L", "XL", "2XL"],
+    specialOrderSizes: ["3XL", "4XL"],
+    image: "long_sleeve_CS.png",
+    description: "Understated and effortlessly cool. The Café Sabor signature logo sits at the chest while the full script runs down the sleeve — a subtle flex for the true fan. This black long sleeve is the kind of shirt you reach for on repeat."
+  }
+];

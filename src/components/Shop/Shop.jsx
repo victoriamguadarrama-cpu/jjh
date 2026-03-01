@@ -1,29 +1,10 @@
-import { useState, useEffect } from "react";
+import { productsData } from "../../data/productsData";
 import ProductCard from "./ProductCard";
 import "./Shop.css";
 
 export default function Shop() {
-  const [products, setProducts] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const products = productsData;
 
-  useEffect(() => {
-    const cached = sessionStorage.getItem("opc-products");
-    if (cached) {
-      setProducts(JSON.parse(cached));
-      setLoading(false);
-    } else {
-      fetch("http://localhost:3001/products")
-        .then((r) => r.json())
-        .then((data) => {
-          sessionStorage.setItem("opc-products", JSON.stringify(data));
-          setProducts(data);
-          setLoading(false);
-        })
-        .catch(() => setLoading(false));
-    }
-  }, []);
-
-  
   const avgPrice = products.length
     ? (products.reduce((s, p) => s + p.price, 0) / products.length).toFixed(2)
     : 0;
@@ -31,8 +12,6 @@ export default function Shop() {
   const priceRange = products.length
     ? `$${Math.min(...prices)} – $${Math.max(...prices)}`
     : "—";
-
-  if (loading) return <div className="shop-loading">Loading products…</div>;
 
   return (
     <div className="shop page-enter">

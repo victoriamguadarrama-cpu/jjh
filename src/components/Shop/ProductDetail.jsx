@@ -1,26 +1,15 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useCart } from "../../store/CartContext";
+import { productsData } from "../../data/productsData";
 import "./ProductDetail.css";
 
 export default function ProductDetail({ productId }) {
-  const [product, setProduct] = useState(null);
+  const product = productsData.find((p) => p.id === productId) || null;
   const [selectedSize, setSelectedSize] = useState(null);
   const [added, setAdded] = useState(false);
   const { addToCart } = useCart();
 
-  useEffect(() => {
-    const cached = sessionStorage.getItem("opc-products");
-    if (cached) {
-      const products = JSON.parse(cached);
-      setProduct(products.find((p) => p.id === productId) || null);
-    } else {
-      fetch(`http://localhost:3001/products/${productId}`)
-        .then((r) => r.json())
-        .then(setProduct);
-    }
-  }, [productId]);
-
-  if (!product) return <div className="detail-loading">Loading…</div>;
+  if (!product) return <div className="detail-loading">Product not found.</div>;
 
   function handleAdd() {
     if (!selectedSize) return;
