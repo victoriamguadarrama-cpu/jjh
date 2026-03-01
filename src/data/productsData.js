@@ -72,7 +72,7 @@ export const productsData = [
   {
     id: 8,
     title: "Island Park, ID",
-    price: 20,
+    price: 35,
     color: "Dark Red",
     sizes: ["XS", "S", "M", "L", "XL", "2XL"],
     specialOrderSizes: ["3XL", "4XL"],
@@ -82,7 +82,7 @@ export const productsData = [
   {
     id: 9,
     title: "Long Sleeved Café Sabor",
-    price: 20,
+    price: 25,
     color: "Black",
     sizes: ["XS", "S", "M", "L", "XL", "2XL"],
     specialOrderSizes: ["3XL", "4XL"],
